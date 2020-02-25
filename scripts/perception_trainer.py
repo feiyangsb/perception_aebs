@@ -53,7 +53,7 @@ class PerceptionTrainer():
 
             scheduler.step()
             epoch_train_time = time.time() - epoch_start_time
-            logging.info('Epoch {}/{}\t Time: {:.3f}\t Total Loss: {:.3f}'\
+            logging.info('Epoch {}/{}\t Time: {:.3f}\t Total Loss: {:.8f}'\
                         .format(epoch+1, self.epoch, epoch_train_time, loss_epoch/n_batches))
             print('Epoch {}/{}\t Time: {:.3f}\t Loss: {:.8f}'.format(epoch+1, self.epoch, epoch_train_time, loss_epoch/n_batches))
         return self.model
