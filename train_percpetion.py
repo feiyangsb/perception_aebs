@@ -8,7 +8,7 @@
 
 from scripts.perception_trainer import PerceptionTrainer
 
-data_path = "../robust_vae/data/training/"
+data_path = "/home/feiyang/Desktop/current_work/CARLA/am_rl_braking/data"
 trainer = PerceptionTrainer(data_path, 350)
 trainer.fit()
 trainer.save_model()

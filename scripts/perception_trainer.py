@@ -58,7 +58,7 @@ class PerceptionTrainer():
             print('Epoch {}/{}\t Time: {:.3f}\t Loss: {:.8f}'.format(epoch+1, self.epoch, epoch_train_time, loss_epoch/n_batches))
         return self.model
     
-    def save_model(self, path='./models/perception'):
+    def save_model(self, path='./models/'):
         if not os.path.exists(path):
             os.makedirs(path)
         torch.save(self.model.state_dict(), os.path.join(path, "perception.pt"))

@@ -58,6 +58,6 @@ class PerceptionNet(nn.Module):
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
         x = F.relu(self.fc3(x))
-        x = F.sigmoid(self.fc4(x))
+        x = torch.sigmoid(self.fc4(x))
         
         return x
