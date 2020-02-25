@@ -1,5 +1,13 @@
+"""
+@author Feiyang Cai
+@email feiyang.cai@vanderbilt.edu
+@create date 2020-02-25 20:08:49
+@modify date 2020-02-25 20:08:49
+@desc network for perception module, from image to distance to the obstacle
+"""
 import torch.nn as nn
 import torch.nn.functional as F
+import torch
 
 class PerceptionNet(nn.Module):
     def __init__(self):
